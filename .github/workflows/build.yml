@@ -1,7 +1,6 @@
 name: "Gradle build"
 permissions: {}
 on:
-  - push
   - pull_request
   - workflow_dispatch
 
@@ -14,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        target: [Debug, Release]
+        target: [Release]
 
     steps:
       - name: "Free disk space"
