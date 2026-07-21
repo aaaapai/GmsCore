@@ -67,6 +67,5 @@ jobs:
         with:
           name: microG-${{ matrix.target }}
           path: |
-            app/build/outputs/apk/**/*.apk
-            app/build/outputs/apk/**/*.apk.idsig   # 如果有签名文件也一并上传
+            build
           if-no-files-found: error
