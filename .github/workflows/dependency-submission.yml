@@ -2,8 +2,7 @@ name: Dependency Submission
 permissions:
   contents: write
 on:
-  push:
-    branches: [ 'master' ]
+  workflow_dispatch:
 
 jobs:
   dependency-submission:
